@@ -54,10 +54,62 @@ body{
 .nav-links a:hover{text-decoration:underline;}
 .nav-links a.active{color:var(--navy-900);font-weight:700;}
 
+.lang-switch{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-left:22px;
+  padding-left:22px;
+  border-left:1px solid var(--border);
+  font-size:0.88rem;
+}
+.lang-switch a{color:var(--navy-600);text-decoration:none;}
+.lang-switch a:hover{text-decoration:underline;}
+.lang-switch span.current{color:var(--navy-900);font-weight:700;}
+.lang-switch .sep{color:var(--border);}
+
 /* Page header (inside wrap) */
 .page-header{padding:36px 0 24px;}
 .page-header h1{margin:0 0 6px;font-size:1.9rem;color:var(--navy-900);}
 .page-header .subtitle{color:var(--muted);font-size:1.05rem;}
+
+/* Profile header with photo */
+.profile-flex{display:flex;gap:24px;align-items:center;flex-wrap:wrap;}
+.profile-photo{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid var(--navy-100);
+  flex-shrink:0;
+}
+.profile-text{flex:1;min-width:240px;}
+
+/* ORCID / Scholar id links */
+.id-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:12px;}
+.id-link{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  color:var(--navy-600);
+  text-decoration:none;
+  font-size:0.92rem;
+}
+.id-link:hover{text-decoration:underline;}
+.id-link svg{flex-shrink:0;}
+
+/* Subsection headings inside a section */
+h3.subhead{
+  font-size:1.02rem;
+  color:var(--navy-900);
+  margin:22px 0 10px;
+}
+h3.subhead:first-child{margin-top:0;}
+
+/* Patents */
+ul.patent-list{margin:0;padding-left:20px;}
+ul.patent-list li{margin-bottom:10px;}
+ul.patent-list .patent-no{color:var(--muted);font-size:0.88rem;}
 
 /* Sections */
 section{margin-bottom:44px;}
@@ -100,6 +152,32 @@ th,td{
 th{color:var(--navy-900);font-weight:700;background:var(--navy-100);}
 tr:last-child td{border-bottom:none;}
 .placeholder-row td{color:var(--muted);font-style:italic;}
+
+/* Publications */
+ol.pub-list{list-style:none;margin:0;padding:0;counter-reset:pub;}
+.pub-item{
+  counter-increment:pub;
+  display:flex;
+  gap:14px;
+  padding:14px 0;
+  border-bottom:1px solid var(--border);
+}
+.pub-item:last-child{border-bottom:none;}
+.pub-item::before{
+  content:counter(pub) ".";
+  color:var(--navy-600);
+  font-weight:700;
+  flex-shrink:0;
+  width:1.6em;
+}
+.pub-body{font-size:0.94rem;}
+.pub-cite{margin:0;}
+.pub-cite .pub-authors{color:var(--text);}
+.pub-cite .pub-authors strong{color:var(--navy-900);}
+.pub-cite .pub-venue{font-style:italic;}
+.pub-cite a{color:var(--navy-600);text-decoration:none;}
+.pub-cite a:hover{text-decoration:underline;}
+.pub-meta{color:var(--muted);font-size:0.82rem;margin-top:3px;}
 
 /* Member cards */
 .member-card{
