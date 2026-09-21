@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRSL 智慧韌性系統實驗室</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-icon.png" alt="IRSL logo" height="30">
+      <span class="brand-text">
+        <span class="brand-en">IRSL</span><br>
+        <span class="brand-zh">智慧韌性系統實驗室</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">首頁 Home</a>
+      <a href="about.html">個人頁面 About</a>
+      <a href="members.html">研究室成員 Members</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="page-header">
+    <img src="assets/logo-lockup.png" alt="IRSL — Intelligent Resilience Systems Laboratory 智慧韌性系統實驗室" style="max-width:100%;width:480px;height:auto;margin-bottom:18px;">
+    <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Intelligent Resilience Systems Laboratory 智慧韌性系統實驗室</h1>
+    <div class="subtitle">Department of Electrical Engineering, National Kaohsiung University of Science and Technology</div>
+  </div>
+
+  <section id="about-lab">
+    <h2>About the Lab</h2>
+    <p>
+      IRSL builds intelligent, resilient systems at the intersection of
+      agentic AI and real-world critical domains — from healthcare operations
+      and civil infrastructure to information security. We design multi-agent
+      frameworks that reason, plan, and act autonomously under uncertainty,
+      and apply them to problems where resilience and reliability matter most.
+    </p>
+    <!-- TODO: expand with a longer lab mission statement if you'd like -->
+  </section>
+
+  <section id="focus">
+    <h2>Research Focus</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Agentic AI</h3>
+        <p>Multi-agent frameworks for autonomous reasoning, planning, and domain-specific task execution.</p>
+      </div>
+      <div class="card">
+        <h3>Healthcare Operations Research</h3>
+        <p>Optimization and routing for mobile screening, resource allocation, and epidemic response.</p>
+      </div>
+      <div class="card">
+        <h3>BIM / MEP Engineering</h3>
+        <p>Automated clash detection and resolution for IFC-based building information models.</p>
+      </div>
+      <div class="card">
+        <h3>Medical AI / Clinical NLP</h3>
+        <p>Clinical text understanding and sensitive health information handling.</p>
+      </div>
+      <div class="card">
+        <h3>LLM Agent Security</h3>
+        <p>Jailbreak attacks and defenses in LLM-based agent systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <p class="placeholder" style="color:var(--muted);font-style:italic;">Lab news and updates coming soon.</p>
+    <!-- TODO: add dated news items here as the lab grows -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Principal Investigator: <a href="about.html" style="color:var(--navy-600);">許協誌 Hsieh-Chih Hsu</a></p>
+    <p>Email: <a href="mailto:hchsu@nkust.edu.tw" style="color:var(--navy-600);">hchsu@nkust.edu.tw</a></p>
+    <p>Department of Electrical Engineering, National Kaohsiung University of Science and Technology</p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> IRSL — Intelligent Resilience Systems Laboratory
+  </footer>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
