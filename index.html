@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if (/\/index\.html$/.test(window.location.pathname)) {
+    window.location.replace(window.location.pathname.replace(/index\.html$/, '') + window.location.search + window.location.hash);
+  }
+</script>
 <title>IRSL 智慧韌性系統實驗室</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -11,7 +16,7 @@
 
 <div class="topnav">
   <div class="topnav-inner">
-    <a class="brand" href="index.html">
+    <a class="brand" href="./">
       <img src="logo-icon.png" alt="IRSL logo" height="30">
       <span class="brand-text">
         <span class="brand-en">IRSL</span><br>
@@ -19,9 +24,14 @@
       </span>
     </a>
     <div class="nav-links">
-      <a href="index.html" class="active">首頁 Home</a>
+      <a href="./" class="active">首頁 Home</a>
       <a href="about.html">個人頁面 About</a>
       <a href="members.html">研究室成員 Members</a>
+    </div>
+    <div class="lang-switch">
+      <span class="current">EN</span>
+      <span class="sep">/</span>
+      <a href="zh-index.html">中文</a>
     </div>
   </div>
 </div>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRSL 智慧韌性系統實驗室</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="zh-index.html">
+      <img src="logo-icon.png" alt="IRSL logo" height="30">
+      <span class="brand-text">
+        <span class="brand-en">IRSL</span><br>
+        <span class="brand-zh">智慧韌性系統實驗室</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="zh-index.html" class="active">首頁 Home</a>
+      <a href="zh-about.html">個人頁面 About</a>
+      <a href="zh-members.html">研究室成員 Members</a>
+    </div>
+    <div class="lang-switch">
+      <a href="./">EN</a>
+      <span class="sep">/</span>
+      <span class="current">中文</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="page-header">
+    <img src="logo-lockup.png" alt="IRSL — 智慧韌性系統實驗室 Intelligent Resilience Systems Laboratory" style="max-width:100%;width:480px;height:auto;margin-bottom:18px;">
+    <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">智慧韌性系統實驗室 Intelligent Resilience Systems Laboratory</h1>
+    <div class="subtitle">國立高雄科技大學 電機工程系</div>
+  </div>
+
+  <section id="about-lab">
+    <h2>關於實驗室</h2>
+    <p>
+      IRSL 致力於在智慧代理人（Agentic AI）與真實世界關鍵領域的交界處，打造智慧且具韌性的系統——涵蓋醫療作業、
+      土木基礎設施到資訊安全等面向。我們設計能在不確定情境下自主推理、規劃並執行任務的多代理人（multi-agent）框架，
+      並將其應用於最需要韌性與可靠度的問題上。
+    </p>
+    <!-- TODO: 如需要可在此補充更完整的實驗室宗旨說明 -->
+  </section>
+
+  <section id="focus">
+    <h2>研究方向</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Agentic AI</h3>
+        <p>用於自主推理、規劃與領域特定任務執行的多代理人框架。</p>
+      </div>
+      <div class="card">
+        <h3>醫療作業研究</h3>
+        <p>行動篩檢站的最佳化與路徑規劃、資源分配，以及疫情應變調度。</p>
+      </div>
+      <div class="card">
+        <h3>BIM／MEP 工程</h3>
+        <p>基於 IFC 之建築資訊模型自動化衝突偵測與排除。</p>
+      </div>
+      <div class="card">
+        <h3>醫療人工智慧／臨床自然語言處理</h3>
+        <p>臨床文本理解與敏感健康資訊處理。</p>
+      </div>
+      <div class="card">
+        <h3>LLM 代理人安全</h3>
+        <p>大型語言模型代理人系統之越獄攻擊與防禦。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>最新消息</h2>
+    <p style="color:var(--muted);font-style:italic;">實驗室消息與更新，敬請期待。</p>
+    <!-- TODO: 實驗室成立後可在此新增帶日期的消息項目 -->
+  </section>
+
+  <section id="contact">
+    <h2>聯絡方式</h2>
+    <p>計畫主持人：<a href="zh-about.html" style="color:var(--navy-600);">許協誌 Hsieh-Chih Hsu</a></p>
+    <p>Email：<a href="mailto:hchsu@nkust.edu.tw" style="color:var(--navy-600);">hchsu@nkust.edu.tw</a></p>
+    <p>國立高雄科技大學 電機工程系</p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> IRSL — 智慧韌性系統實驗室
+  </footer>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
