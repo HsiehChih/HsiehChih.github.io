@@ -205,6 +205,7 @@ ol.pub-list{list-style:none;margin:0;padding:0;counter-reset:pub;}
 .member-info .member-name{font-weight:700;color:var(--navy-900);}
 .member-info .member-role{color:var(--muted);font-size:0.88rem;margin:2px 0 4px;}
 .member-info .member-topic{font-size:0.9rem;}
+.member-list{display:flex;flex-direction:column;gap:14px;}
 
 footer{
   margin-top:56px;
