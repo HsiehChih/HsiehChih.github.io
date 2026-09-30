@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if (/\.html$/.test(window.location.pathname)) {
+    window.location.replace(window.location.pathname.replace(/\.html$/, '') + window.location.search + window.location.hash);
+  }
+</script>
 <title>IRSL 智慧韌性系統實驗室</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -11,7 +16,7 @@
 
 <div class="topnav">
   <div class="topnav-inner">
-    <a class="brand" href="zh-index.html">
+    <a class="brand" href="zh-index">
       <img src="logo-icon.png" alt="IRSL logo" height="30">
       <span class="brand-text">
         <span class="brand-en">IRSL</span><br>
@@ -19,9 +24,9 @@
       </span>
     </a>
     <div class="nav-links">
-      <a href="zh-index.html" class="active">首頁 Home</a>
-      <a href="zh-about.html">個人頁面 About</a>
-      <a href="zh-members.html">研究室成員 Members</a>
+      <a href="zh-index" class="active">首頁 Home</a>
+      <a href="zh-about">個人頁面 About</a>
+      <a href="zh-members">研究室成員 Members</a>
     </div>
     <div class="lang-switch">
       <a href="./">EN</a>
@@ -82,7 +87,7 @@
 
   <section id="contact">
     <h2>聯絡方式</h2>
-    <p>主持人：<a href="zh-about.html" style="color:var(--navy-600);">許協誌 Hsieh-Chih Hsu</a></p>
+    <p>主持人：<a href="zh-about" style="color:var(--navy-600);">許協誌 Hsieh-Chih Hsu</a></p>
     <p>Email：<a href="mailto:hchsu@nkust.edu.tw" style="color:var(--navy-600);">hchsu@nkust.edu.tw</a></p>
     <p>國立高雄科技大學 電機工程系</p>
   </section>

@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if (/\.html$/.test(window.location.pathname)) {
+    window.location.replace(window.location.pathname.replace(/\.html$/, '') + window.location.search + window.location.hash);
+  }
+</script>
 <title>許協誌 Hsieh-Chih Hsu</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -11,7 +16,7 @@
 
 <div class="topnav">
   <div class="topnav-inner">
-    <a class="brand" href="zh-index.html">
+    <a class="brand" href="zh-index">
       <img src="logo-icon.png" alt="IRSL logo" height="30">
       <span class="brand-text">
         <span class="brand-en">IRSL</span><br>
@@ -19,12 +24,12 @@
       </span>
     </a>
     <div class="nav-links">
-      <a href="zh-index.html">首頁 Home</a>
-      <a href="zh-about.html" class="active">個人頁面 About</a>
-      <a href="zh-members.html">研究室成員 Members</a>
+      <a href="zh-index">首頁 Home</a>
+      <a href="zh-about" class="active">個人頁面 About</a>
+      <a href="zh-members">研究室成員 Members</a>
     </div>
     <div class="lang-switch">
-      <a href="about.html">EN</a>
+      <a href="about">EN</a>
       <span class="sep">/</span>
       <span class="current">中文</span>
     </div>
@@ -57,7 +62,7 @@
     <h2>關於</h2>
     <p>
       我目前任職於國立高雄科技大學電機工程系，擔任研究型專案助理教授，並為
-      <a href="zh-index.html" style="color:var(--navy-600);">智慧韌性系統實驗室（IRSL）</a>主持人。
+      <a href="zh-index" style="color:var(--navy-600);">智慧韌性系統實驗室（IRSL）</a>主持人。
       我的研究聚焦於智慧代理人（Agentic AI）系統，並將其應用於醫療作業、土木工程與資訊安全等具韌性需求的關鍵領域。
     </p>
     <!-- TODO: 如需要可在此補充更完整的個人簡介 -->
