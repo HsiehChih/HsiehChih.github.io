@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-  if (/\/index\.html$/.test(window.location.pathname)) {
-    window.location.replace(window.location.pathname.replace(/index\.html$/, '') + window.location.search + window.location.hash);
+  if (window.location.pathname !== '/') {
+    history.replaceState(null, '', '/');
   }
 </script>
 <title>IRSL 智慧韌性系統實驗室</title>
@@ -31,7 +31,7 @@
     <div class="lang-switch">
       <span class="current">EN</span>
       <span class="sep">/</span>
-      <a href="zh-index">中文</a>
+      <a href="tw-index">中文</a>
     </div>
   </div>
 </div>
