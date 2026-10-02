@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if (window.location.pathname !== '/') {
+    history.replaceState(null, '', '/');
+  }
+</script>
+<title>計畫 · IRSL</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="tw-index">
+      <img src="logo-icon.png" alt="IRSL logo" height="30">
+      <span class="brand-text">
+        <span class="brand-en">IRSL</span><br>
+        <span class="brand-zh">智慧韌性系統實驗室</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="tw-index">首頁</a>
+      <a href="tw-about">主持人介紹</a>
+      <a href="tw-publications">著作</a>
+      <a href="tw-projects" class="active">計畫</a>
+      <a href="tw-members">研究室成員</a>
+    </div>
+    <div class="lang-switch">
+      <a href="projects">EN</a>
+      <span class="sep">/</span>
+      <span class="current">中文</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="page-header">
+    <h1>計畫</h1>
+  </div>
+
+  <section id="projects">
+    <h3 class="subhead">國科會計畫</h3>
+    <table>
+      <thead><tr><th>年度</th><th>計畫名稱</th><th>計畫編號</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>115</td>
+          <td>Agentic AI 輔助工程協調與韌性資源調度</td>
+          <td>NSTC 115-2222-E-992-012-MY2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="subhead">產學合作</h3>
+    <table>
+      <thead><tr><th>年度</th><th>計畫名稱</th><th>合作廠商</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>114</td>
+          <td>導入AI擷取文本報告之結構化資料</td>
+          <td>高雄醫學大學附設中和紀念醫院</td>
+        </tr>
+        <tr>
+          <td>114</td>
+          <td>以AI建構自動化解析非結構化癌症個案報告</td>
+          <td>高雄醫學大學附設中和紀念醫院</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> IRSL · 智慧韌性系統實驗室
+  </footer>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
