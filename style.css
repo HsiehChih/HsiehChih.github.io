@@ -120,7 +120,7 @@ h2{
   padding-bottom:8px;
   margin-bottom:16px;
 }
-p{margin:0 0 12px;}
+p{margin:0 0 12px;text-align:justify;text-justify:inter-word;}
 
 /* Cards */
 .grid{
